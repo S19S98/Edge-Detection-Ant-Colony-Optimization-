@@ -1,0 +1,8 @@
+% matlab code for CANNY
+
+img=imread('farm.jpeg');
+K = rgb2gray(img);
+img1 = imresize(K,[350 350]);
+
+IC=edge(img1,'canny');
+figure,imshow(IC);
