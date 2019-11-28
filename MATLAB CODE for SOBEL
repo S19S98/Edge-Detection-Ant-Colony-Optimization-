@@ -1,0 +1,8 @@
+% SOBEL CODE 
+
+img=imread('farm.jpeg');
+K = rgb2gray(img);
+img1 = imresize(K,[350 350]);
+
+IS=edge(img1,'sobel');
+figure,imshow(IS);
